@@ -39,7 +39,7 @@ export const createEnquiry = async (req, res) => {
     // 3️⃣ SMTP Mail
     const mailOptions = {
       from: `"Travel Enquiry" <${process.env.SMTP_USER}>`,
-      to: process.env.ADMIN_EMAIL,
+      to: process.env.SMTP_ADMIN_EMAIL,
       replyTo: email,
       subject: `New Enquiry from ${name}`,
       html: `
