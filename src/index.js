@@ -12,6 +12,7 @@ import authRoutes from "./routes/auth.routes.js";
 import blogRoutes from "./routes/blog.routes.js";
 import packageRoutes from "./routes/package.routes.js";
 import categoryRoute from "./routes/category.routes.js";
+import enqueryRoute from "./routes/enquiry.route.js";
 
 // env load
 dotenv.config();
@@ -46,6 +47,8 @@ app.use("/api/auth", authRoutes);
 app.use("/api/blogs", blogRoutes);
 app.use("/api/packages", packageRoutes);
 app.use("/api/category", categoryRoute);
+app.use("/api/enqueries", enqueryRoute);
+
 
 // server start
 const PORT = process.env.PORT || 5000;
