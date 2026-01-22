@@ -13,6 +13,7 @@ import blogRoutes from "./routes/blog.routes.js";
 import packageRoutes from "./routes/package.routes.js";
 import categoryRoute from "./routes/category.routes.js";
 import enqueryRoute from "./routes/enquiry.route.js";
+import Package from "./models/Package.js";
 
 // env load
 dotenv.config();

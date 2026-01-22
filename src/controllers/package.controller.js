@@ -86,7 +86,7 @@ export const getPublicPackages = async (req, res) => {
   try {
     const packages = await Package.find({ isActive: "public" })
       .populate("category", "name slug")
-      .sort({ createdAt: -1 });
+      .sort({ price: 1 });
 
     return res.status(200).json(packages);
   } catch (error) {
